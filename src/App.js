@@ -141,7 +141,7 @@ const App = () => {
         <Container>
           <Box sx={{ my: 4 }}>
             <Typography variant="h4" component="h1" gutterBottom>
-              Game Date 📆 : Sunday 27th of NOV 2022
+              Game Date 📆 : Sunday 18th of DEC 2022
               <h1> 🇦🇷 ARGENTINA 0 vs 🇫🇷 FRANCE 0 </h1>
             </Typography>
           </Box>
@@ -158,7 +158,7 @@ const App = () => {
             }}
           >
             <Typography component="h1" variant="h5">
-              ⚽️ Bet on the game ⚽️ { bets === '0' ? <strong> No bets yet </strong> : <strong> {Number(bets)} bets </strong> }
+              ⚽️ Bets on the game ⚽️ { bets === '0' ? <strong> No bets yet </strong> : <strong> {Number(bets)} bets </strong> }
               {lastTransaction && <p style={ {color : 'green' }}>New Bet Set --> show transaction</p>}
             </Typography>
             <Box
