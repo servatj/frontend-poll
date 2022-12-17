@@ -143,8 +143,10 @@ const App = () => {
             <Typography variant="h4" component="h1" gutterBottom>
               Game Date 📆 : Sunday 27th of NOV 2022
               <h1> 🇦🇷 ARGENTINA 0 vs 🇫🇷 FRANCE 0 </h1>
-              <h2> {isLoading && <><Audio color="#ec1966" height={80} width={80} /> Loading ...</>} </h2>
             </Typography>
+          </Box>
+          <Box display="flex" justifyContent='center' sx={{ my: 4 }}>
+              {isLoading && <><Audio wrapperStyle color="black" height={80} width={80} /> Loading ...</>}
           </Box>
           <CssBaseline />
           <Box
