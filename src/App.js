@@ -62,12 +62,12 @@ const App = () => {
       console.log("bet pool contract when addbet", betPoolContract);
       const allowance = await usdcContract.allowance(account, betPoolAddress);
       console.log(allowance, ethers.utils.formatEther(allowance));
-      if (ethers.utils.formatEther(allowance) === "0.0") {
+      //if (ethers.utils.formatEther(allowance) === "0.0") {
         await usdcContract.approve(
           betPoolAddress,
           ethers.utils.parseEther("1000")
         );
-      }
+      //}
       const transaction = await betPoolContract.bet(nickname, scoreA, scoreB);
       await transaction.wait();
       setLoading(false);
