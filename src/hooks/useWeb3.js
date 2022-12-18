@@ -13,7 +13,7 @@ const useWeb3 = () => {
   const [betPoolContract, setBetPoolContract] = useState();
   
   const usdcAddress = '0x9D2f30cd314084e6F607CE9E8Df174F0D4ef0942'
-  const betPoolAddress = '0xF55F171f30045592Bc96EB243633dE480B73A25d'
+  const betPoolAddress = '0xaF3Fb24a348b8066eFc9905899dB1BC4E0EDA9df'
 
   function isMetamaskInstalled() {
     if (window.ethereum) {
